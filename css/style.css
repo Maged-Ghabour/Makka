@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+table,
+td,
+th {
+  border: 1px solid rgb(34, 25, 25);
+}
+
+textarea {
+  resize: none;
+
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+
+  resize: none;
+}
+label {
+  font-weight: bold;
+  color: #007876;
+}
+.search {
+  border: 1px solid #ddd;
+  box-shadow: 0 0 1px #fafafa;
+}
+footer {
+  background-color: rgb(112, 110, 110);
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}

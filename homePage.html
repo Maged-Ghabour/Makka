@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" type="text/html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بيانات مسافرين</title>
+
+    <!-- RTL Bootstarp -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap FrameWork -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <!-- Font Awosome -->
+    <link rel="stylesheet" href="css/all.min.css" type="text/css" />
+    <!-- Main File CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+  <body>
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;500;700;800&display=swap');
+      
+    body{
+        font-family: 'Cairo', sans-serif;
+       }
+       
+          .our-page{
+                background-image: url(flight02.jpg);
+                background-size:cover;
+                height: calc(100vh - 20px);
+        }
+        .container{
+          
+           display: flex;
+           flex-wrap: wrap;
+           flex-direction: row;
+           align-items:center;
+           justify-content: space-evenly;
+           height: 25rem;
+          
+        }
+       
+     
+        button{
+            width: 25%;
+            margin: 20px;
+            font-weight: bold;
+           
+            color:black;
+            height: 50px;
+           
+
+        }
+        .btn btn-success{
+            font-weight: bold !important;
+            font-size: 4rem;
+        }
+        .our-page h1{
+            color: #ffff;
+            font-size: 5rem;
+            text-align: center;
+            padding: 3rem;
+         
+        
+        }
+       
+    </style>
+</head>
+<body>
+   
+<div class="our-page">
+
+    <h1> شركــــة مكــــــة للسياحة </h1>
+
+    <div class="container">
+        <button id = "btn5" class="btn btn-success btn-lg" >رجب</a></button>
+        <button id = "btn2" class="btn btn-success btn-lg" >شعبان</button>
+        <button id = "btn1" class="btn btn-success btn-lg" >رمضان</button>
+        <button id = "btn3" class="btn btn-success btn-lg" >الحج</a></button>
+        <button id = "btn4" class="btn btn-success  btn-lg" >حجز طيران</a></button>
+
+    </div>
+</div>
+    <script>
+
+        document.getElementById("btn1").addEventListener("click",()=>{
+           document.location.href="pages/ramadan.html"
+        })
+        document.getElementById("btn2").addEventListener("click",()=>{
+           document.location.href="pages/shaban.html"
+        })
+        document.getElementById("btn3").addEventListener("click",()=>{
+           document.location.href="pages/el7g.html"
+        })
+        document.getElementById("btn4").addEventListener("click",()=>{
+           document.location.href="pages/tayaran.html"
+        })
+        document.getElementById("btn5").addEventListener("click",()=>{
+           document.location.href="pages/ragab.html"
+        })
+    </script>
+
+     
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

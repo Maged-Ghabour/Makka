@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" type="text/html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بيانات مسافرين</title>
+
+    <!-- RTL Bootstarp -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap FrameWork -->
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+    <!-- Font Awosome -->
+    <link rel="stylesheet" href="../css/all.min.css" type="text/css" />
+    <!-- Main File CSS -->
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container w-90 mx-auto my-2">
+      <label for="userName">الاسم</label>
+      <input
+        type="text"
+        class="my-2 form-control"
+        name="userName"
+        id="userName"
+      />
+      <div class="row">
+        <div class="col">
+          <label for="passorNum">رقم الجواز</label>
+          <input
+            type="text"
+            class="my-2 form-control"
+            name="passorNum"
+            id="passorNum"
+          />
+        </div>
+        <div class="col">
+          <label for="phoneNumber">رقم التليفون</label>
+          <input
+            type="text"
+            class="my-2 form-control"
+            name="phoneNumber"
+            id="phoneNumber"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label for="expireStart"> تاريخ الاصدار</label>
+          <input
+            type="text"
+            class="my-2 form-control"
+            name="expireStart"
+            id="expireStart"
+          />
+        </div>
+        <div class="col">
+          <label for="expireEnd">تاريخ الانتهاء</label>
+          <input
+            type="text"
+            class="my-2 form-control"
+            name="expireEnd"
+            id="expireEnd"
+          />
+        </div>
+      </div>
+
+      <label for="address">محل الاقامة</label>
+      <input
+        type="text"
+        class="my-2 form-control"
+        name="address"
+        id="address"
+      />
+      <label for="vaccine">نوع اللقاح</label>
+      <input
+        type="text"
+        class="my-2 form-control"
+        name="vaccine"
+        id="vaccine"
+      />
+
+      <label for="documents">نواقص مستندات</label>
+      <textarea
+        class="form-control my-2 text-muted"
+        id="documents"
+        style="height: 70px"
+      ></textarea>
+
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-primary w-50 mx-auto d-block mt-5" id="btnAdd">
+            إضافـة
+          </button>
+        </div>
+        <div class="col">
+          <button
+            class="btn btn-warning w-50 mx-auto d-block mt-5"
+            id="btnUpdate"
+          >
+            تعديل
+          </button>
+        </div>
+      </div>
+
+      <div class="search my-5 p-3">
+        <label for="search">البحث بالاســـــــــم</label>
+        <input
+          onkeyup="searchData(this.value)"
+          class="form-control my-2"
+          type="search"
+          id="search"
+        />
+      </div>
+
+      <table class="table text-center w-90 m-auto">
+        <thead>
+          <th>الفهرس</th>
+          <th class="w-25">الاسم</th>
+          <th>رقم الجواز</th>
+          <th>رقم التليفون</th>
+          <th>تاريخ الاصدار</th>
+          <th>تاريخ الانتهاء</th>
+          <th>محل الاقامة</th>
+          <th>نوع اللقاح</th>
+          <th>نواقص مستندات</th>
+          <th>تعديل</th>
+          <th>حذف</th>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+    <footer>All Copyright Reversed &copy; Ghabour 2021</footer>
+
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/main3.js"></script>
+  </body>
+</html>
